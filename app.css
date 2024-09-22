@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Coffee soda';
+    src: url(Coffee\ Soda.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff7e5f);
+    background-size: 400% 400%; /* Adjust size for smooth animation */
+    animation: gradientAnimation 6s ease infinite; /* Animation duration and type */
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: Coffee Soda;
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: rgb(14, 133, 133);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.featured-title{
+    text-align: center;
+    color: #ff7e5f;
+}
+
+.recipe {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.recipe h2 {
+    color: #333;
+}
+
+.recipe p {
+    color: #666;
+}
+
+.recipe a{
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#featured {
+    background-color: #fce8e8;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px; /* Adds space below this section */
+    border: 2px solid #ff7e5f; /* Optional border */
+}
+
+#submit-recipe {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #00796b; /* Optional border */
+}
+
+input[type="submit"] {
+    background-color: #ff7e5f; /* Button background color */
+    color: white; /* Text color */
+    padding: 12px 20px; /* Padding for a larger clickable area */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#submit-recipe h2{
+    color: #00796b;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #feb47b; /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.submitted-recipes{
+    text-align: center;
+}
+
+#submitted-recipes {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light background for submitted recipes */
+    border-radius: 5px;
+}
+
+#recipe-list .recipe {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease;
+    opacity: 0; /* Start hidden */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.notification.show {
+    opacity: 1; /* Fade in effect */
+}
