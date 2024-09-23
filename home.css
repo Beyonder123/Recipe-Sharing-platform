@@ -1,0 +1,129 @@
+/* Basic Reset and Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header, footer {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome Banner */
+.welcome-banner {
+    text-align: center;
+    background: linear-gradient(to right, #4caf50, #81c784);
+    color: white;
+    padding: 50px 20px;
+}
+
+.welcome-banner h2 {
+    font-size: 2.5em;
+}
+
+.welcome-banner p {
+    font-size: 1.2em;
+}
+
+/* Featured Recipes Section */
+.featured-recipes, .popular-recipes {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.recipe-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+}
+
+.recipe-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Categories Section */
+.recipe-categories {
+    background-color: #f1f1f1;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.category-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #81c784;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.category-links a:hover {
+    background-color: #4caf50;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    background-color: #4caf50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.call-to-action .cta-button {
+    background-color: white;
+    color: #4caf50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: #81c784;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
